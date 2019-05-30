@@ -1,7 +1,9 @@
 # Flatiron School Module 3 Final Project
 
-Team Member 1: Larry Chew \n
-Team Member 2: Kayli Leung \n
+Team Member 1: Larry Chew
+
+Team Member 2: Kayli Leung
+
 [Presentation](https://docs.google.com/presentation/d/13xDg4bP4t6J1Iv43hvZ-Bq4sVGZcFJ31_uFCNUev_lI/edit?usp=sharing)
 
 ## Business Understanding
