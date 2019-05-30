@@ -1,8 +1,8 @@
 # Flatiron School Module 3 Final Project
 
-Team Member 1: Larry Chew
-Team Member 2: Kayli Leung
-(Presentation)[https://docs.google.com/presentation/d/13xDg4bP4t6J1Iv43hvZ-Bq4sVGZcFJ31_uFCNUev_lI/edit?usp=sharing]
+Team Member 1: Larry Chew \n
+Team Member 2: Kayli Leung \n
+[Presentation](https://docs.google.com/presentation/d/13xDg4bP4t6J1Iv43hvZ-Bq4sVGZcFJ31_uFCNUev_lI/edit?usp=sharing)
 
 ## Business Understanding
 
@@ -10,7 +10,7 @@ Deliveries can be stressful for nearly every party involved, including the fetus
 
 ## Data Understanding
 
-We used the (UCI Cardiotocography Data Set)[https://archive.ics.uci.edu/ml/datasets/cardiotocography#]. The dataset has 23 predictive features from CTGs as well as classifications by experts. There were 2126 data points. 
+We used the [UCI Cardiotocography Data Set](https://archive.ics.uci.edu/ml/datasets/cardiotocography#). The dataset has 23 predictive features from CTGs as well as classifications by experts. There were 2126 data points. 
 
 ## Data Preparation
 
