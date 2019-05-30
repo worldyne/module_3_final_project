@@ -28,7 +28,7 @@ Our XGBoosted model had a testing recall of about 94% and a Hamming-Loss score o
 
 ## Future Exploration
 
-If we had more data we would hopefully be able to improve on our model as we only trained the model on about 1500 data points. If we had images of the CTGs we would like to perform image recognition for classification. This model does not extend to all deliveries as literature has shown CTGs to not be as effective for pre-term/post-term deliveries, multiple births, or for mothers that previously had a C-section.
+We would like to try different threshold values for the predictions to weight towards predicting suspect/pathological over normal. If we had more data we would hopefully be able to improve on our model as we only trained the model on about 1500 data points. If we had images of the CTGs we would like to perform image recognition for classification. This model does not extend to all deliveries as literature has shown CTGs to not be as effective for pre-term/post-term deliveries, multiple births, or for mothers that previously had a C-section.
 
 ## Citations:
 Ayres de Campos et al. (2000). UCI Machine Learning Repository [https://archive.ics.uci.edu/ml/datasets/cardiotocography#]. Irvine, CA: University of California, School of Information and Computer Science.
