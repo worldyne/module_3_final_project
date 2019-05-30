@@ -1,5 +1,7 @@
-from sklearn.metrics import recall_score, hamming_loss, roc_curve, auc, roc_auc_score
+from sklearn.metrics import recall_score, hamming_loss, roc_curve, auc, roc_auc_score, confusion_matrix
 import matplotlib.pyplot as plt
+import numpy as np
+import itertools
 
 def get_scores(y_train, y_train_hat, y_test, y_test_hat):
     """Prints the recall and hamming-loss scores for the training and testing data"""
@@ -42,3 +44,33 @@ def plot_roc_curve(y_test, y_test_score):
     plt.title('Receiver operating characteristic')
     plt.legend(loc="lower right")
     plt.show()
+    
+    
+def show_cm(y_true, y_pred, class_names=None, model_name=None):
+    cf = confusion_matrix(y_true, y_pred)
+    plt.imshow(cf, cmap=plt.cm.Blues)
+    
+    if model_name:
+        plt.title("Confusion Matrix: {}".format(model_name))
+    else:
+        plt.title("Confusion Matrix")
+    plt.ylabel('True Label')
+    plt.xlabel('Predicted Label')
+    
+    
+    if class_names:
+        tick_marks = np.arange(len(class_names))
+        plt.xticks(tick_marks, class_names)
+        plt.yticks(tick_marks, class_names)
+    else:
+        class_names = set(y_true)
+        tick_marks = np.arange(len(class_names))
+        plt.xticks(tick_marks, class_names)
+        plt.yticks(tick_marks, class_names)
+    
+    thresh = cf.max() / 2.
+    
+    for i, j in itertools.product(range(cf.shape[0]), range(cf.shape[1])):
+        plt.text(j, i, cf[i, j], horizontalalignment='center', color='white' if cf[i, j] > thresh else 'black')
+
+    plt.colorbar()
