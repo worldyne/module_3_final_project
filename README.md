@@ -22,6 +22,8 @@ We removed columns in the data that were not relevant to our problem. For exampl
 
 We ran several models on the data to find a model that would minimize the recall. We choose to look at recall because, in most medical situations, it is much more important to have lower false negatives than it is to have low false positives. We grid searched and ran KNN, Decision Trees, Random Forests, and XGBoosting. We settled on XGBoosting with parameters of `learning rate = 0.01`, `n_estimators = 1000`, `max_depth = 8`.
 
+[Notebook](CTG_classification_models.ipynb)
+
 ## Evaluation
 
 Our XGBoosted model had a testing recall of about 94% and a Hamming-Loss score of about 3.2%. Our false negative rate was about 6%. We suggest that while this model is helpful and has a fairly low false negative rate, that expert opinion still be used in conjunction with the model. Since this is a life-or-death situation, 6% is a bit too high of a risk to falsely say a birth is normal when it is actually pathological. 
